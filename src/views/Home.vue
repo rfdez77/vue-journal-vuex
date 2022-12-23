@@ -1,0 +1,25 @@
+<template>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <h1>Hola Mundo</h1>
+    <butom @click="goToDaybook" class="btn btn-primary">Primary</butom>
+    <butom @click="goToDaybook" class="btn btn-secondary">Secondary</butom>
+    <butom @click="goToDaybook" class="btn btn-success">Success</butom>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+
+
+export default {
+  name: 'Home',
+
+  methods: {
+    goToDaybook() {
+      this.$router.push({ name: 'no-entry' })
+    }
+  }
+ 
+}
+</script>
