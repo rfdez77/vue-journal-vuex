@@ -1,28 +1,17 @@
-
 import { createStore } from 'vuex'
+
 import journal from '../modules/daybook/store/journal'
+import auth from '../modules/auth/store'
+
 
 const store = createStore({
-
-    // esto seria de manera global
-    // state () {
-    //     return {
-    //       count: 0
-    //     }
-    //   },
-    //   mutations: {
-    //     increment (state) {
-    //       state.count++
-    //     }
-    //   }
-
-    // Nombre carpeta del store de daybook
     modules: {
+        auth,
         journal
     }
-
-
-
 })
+
+
+
 
 export default store
